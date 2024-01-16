@@ -1,3 +1,129 @@
-h1 {
-    background-color: aqua;
+/* google font styles */
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap');
+
+/* shared styles */
+*{
+    font-family: 'Mulish', sans-serif;
+}
+body {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.orange {
+    color: #FF5400;;
+}
+.light-white {
+    color: #FFF;
+}
+.description {
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* nav section styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;  
+}
+.logo {
+    display: flex;
+}
+.logo img {
+    width: 48px;
+    height: 56px;
+    margin-top: 1.5rem;
+}
+.logo h1 {
+    margin-left: 1rem;
+    color: #131318;
+    font-size: 2.2rem;
+    font-weight: 800;
+    
+}
+.menu-section>ul {
+    display: flex;
+    list-style: none;    
+}
+.menu-section li {
+    margin-left: 2.8rem;
+    margin-top: 25px;
+}
+.menu-section a {
+    text-decoration: none;
+    color: #424247;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* main section start */
+
+/* banner section styles */
+.banner-container {
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    width: 100%;
+    height: 500px;
+    /* display:flex;
+    align-items: center;
+    justify-content: center; */
+
+}
+.banner-content {
+    text-align: center;
+    padding: 106px 185px;
+    
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 800;
+}
+form {
+    display: inline-flex;
+    padding: 16px;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    margin: 50px 0;
+
+}
+form .input-width {
+    width: 10.9rem;
+    height: 3.25rem;
+    border: none;
+    border-radius: 8px;
+    background: #FFF;
+    color: rgba(19, 19, 24, 0.50);
+}
+form button {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+}
+   
+
+
+
+/* meadia query */
+
+/* mobile device */
+
+@media screen and (max-width: 600px) {
+    nav,
+    .menu-section> ul,
+    form {
+        flex-direction: column;
+    }
+    .menu-section li {
+        margin: 0;
+    }
+    .banner-content {
+        padding: 10px;
+    }
+    .banner-title {
+        font-size: 22px;
+    }
+    form {
+        margin: 20px 0;
+    }
 }
