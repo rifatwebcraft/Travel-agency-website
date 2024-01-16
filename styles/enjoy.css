@@ -136,9 +136,78 @@ form .find-now {
 .popular-container li {
     margin-top: 30px;
 }
+/* destination section styles */
+.destination-content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.destination-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    margin-top: 40px;
+    margin-bottom: 100px;
 
+}
+.img-title {
+    font-size: 28px;
+    font-weight: 800;
+}
+.img-box {
+    position: relative;
+    text-align: center;
+    color: #FFF;
+}
+.text-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Choos us section styles */
+.choose-us-content {
+    text-align: center;
+}
+.choose-card-container {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.card-1 {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    width: 500px;
+    height: 200px;
+    padding: 30px;
+}
+.card-2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    width: 500px;
+    height: 200px;
+    padding: 30px;
+}
+.card-3 {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    width: 500px;
+    height: 200px;
+    padding: 30px;
+}
 
+.choose-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 
+}
+.card-icon {
+    font-size: 60px;
+    color: rgb(55, 175, 81);
+}
 /* meadia query */
 
 /* mobile device */
@@ -159,13 +228,16 @@ form .find-now {
     .banner-content,
     form ,
     .banner-container,
-    .popular-container {
-        padding: 10px;
+    .popular-container,
+    .choose-us-section,
+    nav,
+    .banner-container,
+    .destination-section{
+        padding: 20px;
     }
-    /* .banner-title {
-        font-size: 22px;
-    } */
-    form .input-width {
+
+    form .input-width,
+    .img-box img {
         width: 100%;
     }
 }
