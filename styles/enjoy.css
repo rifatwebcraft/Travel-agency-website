@@ -5,7 +5,7 @@
 *{
     font-family: 'Mulish', sans-serif;
 }
-body {
+header, main {
     max-width: 1170px;
     margin: 0 auto;
 }
@@ -38,6 +38,10 @@ body {
     font-size: 20px;
     font-weight: 800;
     padding: 15px 35px;
+}
+.line {
+    border: 1px solid rgba(19, 19, 24, 0.10);
+    margin-bottom: 10px;
 }
 
 /* nav section styles */
@@ -101,7 +105,7 @@ nav {
 .form-section {
     margin-bottom: 50px;
 }
-form {
+.form-section form {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 24px;
@@ -225,43 +229,158 @@ video {
     height: 326px;
     border-radius: 10px;
 }
+/* expert-section */
+.expert-section {
+    display:flex;
+    justify-content:space-between;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding : 50px 30px;
+    margin-bottom: 100px;
+}
+
+/* newsletter section styles */
+
+.newsletter-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 100px;
+    
+}
+
+.newsletter-form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 40%;
+    border: 1px solid #FF5400;
+    border-radius: 16px;
+}
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.newsletter-form input {
+    border: none;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 20px;
+}
+.newsletter-img {
+    background: url(../Images/Rectangle\ 8\ \(1\).png);
+    width: 60%;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    position: relative;
+}
+.newsletter-img-overtext {
+    background-color: #FF5400;
+    border-radius: 16px;
+    text-align: center;
+    position: absolute;
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
+    transform: rotate(-20deg);
+    padding: 0 30px;
+   
+}
+.newsletter-img-overtext p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.newsletter-img-overtext h2 {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 800;
+    
+}
+
+/* footer section */
+
+.footer-section {
+    background: rgba(19, 19, 24, 0.10);
+    padding: 110px 284px;
+    text-align: center;
+}
+.footer-logo {
+    display: flex;
+    justify-content: center;
+}
+.footer-logo img {
+    width: 40px;
+    height: 56px;
+    margin-top: 1.5rem;
+}
+.footer-logo h1 {
+    margin-left: 1rem;
+    color: #131318;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 30px;
+}
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+}
 
 /* meadia query */
 
 /* mobile device */
 
-@media screen and (max-width: 600px) {
-    nav,
-    .menu-section> ul,
-    .popular-container,
-    .perfect-place-section {
-        flex-direction: column;
-    }
-    form {
-        grid-template-columns: repeat(1,1fr);
-    }
-    .menu-section li,
-    form {
-        margin: 0;
-    }
-    .banner-content,
-    form ,
-    .banner-container,
-    .popular-container,
-    .choose-us-section,
-    nav,
-    .banner-container,
-    .destination-section,
-    .perfect-place-section{
-        padding: 20px;
-    }
 
-    form .input-width,
-    .img-box>img,
-    video {
-        width: 100%;
+    @media screen and (max-width: 600px) {
+        nav,
+        .menu-section> ul,
+        .popular-container,
+        .perfect-place-section,
+        .newsletter-section,
+        .expert-section {
+            flex-direction: column;
+        }
+        .form-section form {
+            grid-template-columns: repeat(1,1fr);
+        }
+        .menu-section li,
+        .form-section form {
+            margin: 0;
+        }
+        .banner-content,
+        .form-section form ,
+        .banner-container,
+        .popular-container,
+        .choose-us-section,
+        nav,
+        .banner-container,
+        .destination-section,
+        .perfect-place-section,
+        .newsletter-section,
+        .footer-section{
+            padding: 10px;
+        }
+    
+        .form-section form .input-width,
+        .img-box img,
+        video,
+        .newsletter-form-container {
+            width: 100%;
+        }
+        video {
+            height: 210px;
+        }
+        .newsletter-img {
+            height: 100%;
+        }
+        .newsletter-img {
+             width: 100%;
+            height: 370px;
+         }
     }
-    video {
-        height: 210px;
-    }
-}
+    
+
+
