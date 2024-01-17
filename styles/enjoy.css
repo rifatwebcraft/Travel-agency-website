@@ -208,6 +208,24 @@ form .find-now {
     font-size: 60px;
     color: rgb(55, 175, 81);
 }
+
+/* pefect place section styles */
+
+.perfect-place-section{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.perfect-place-content li {
+    margin-bottom: 20px;
+}
+video {
+    width: 50%;
+    height: 326px;
+    border-radius: 10px;
+}
+
 /* meadia query */
 
 /* mobile device */
@@ -215,7 +233,8 @@ form .find-now {
 @media screen and (max-width: 600px) {
     nav,
     .menu-section> ul,
-    .popular-container {
+    .popular-container,
+    .perfect-place-section {
         flex-direction: column;
     }
     form {
@@ -232,12 +251,17 @@ form .find-now {
     .choose-us-section,
     nav,
     .banner-container,
-    .destination-section{
+    .destination-section,
+    .perfect-place-section{
         padding: 20px;
     }
 
     form .input-width,
-    .img-box img {
+    .img-box>img,
+    video {
         width: 100%;
+    }
+    video {
+        height: 210px;
     }
 }
